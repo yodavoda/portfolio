@@ -1,0 +1,4 @@
+backend/.env
+backend/chat_history.db
+backend/__pycache__/
+frontend/node_modules/

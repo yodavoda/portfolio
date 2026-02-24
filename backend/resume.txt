@@ -1,0 +1,55 @@
+﻿Sriram Karthik Eunni
++916309130380|eunnisriram@gmail.com| https://www.linkedin.com/in/sriram-karthik-49a78722a/
+EDUCATION
+• Manipal institute of technology, Manipal
+Btech Computer Science| sept 2022- June 2026
+• Bright Riders school, Abu Dhabi
+CBSE senior secondary Examination: 86.4%
+TECHNICAL SKILLS
+Key modules: Design and analysis of algorithms, Data structures, Object Oriented programming, Database
+management systems, Digital systems design, Embedded Systems, Formal languages and Automata theory,
+math 3 & math 4,Computer networks, Operating Systems, Parallel Computing, Compiler Design
+Programming languages: C(proficient), Java(good), Python(proficient), ARM language
+Web: HTML, CSS, javascript, Adobe XD (design)
+Database Knowledge: MySQL
+Others: after effects, Premiere pro, MS office (word, ppt, excel)
+PROJECTS & INTERNSHIPS
+Tridel technology:
+ Conducted JUnit testing to ensure reliability and performance of company software.
+ Assisted in validating new features for ATTide software through structured test cases.
+ Developed a Java and JUnit-based module to interpret and analyze collected ocean tide readings.
+Campus Connect (Flutter, Firebase)
+• Overview: Developed a mobile application aimed at enhancing campus life by connecting students and
+faculty with real-time event updates, location services, and peer reviews.
+• Key Features: Integrated real-time notifications for campus events, implemented location-based
+services using Firebase's real-time database, and enabled user interactions through a sleek UI built
+with Flutter.
+Bank ATM Simulator (JavaFX, MySQL)
+• Overview: Designed and implemented a fully functional ATM simulator, providing users with the ability
+to perform standard banking operations such as withdrawals, deposits, and bill payments.
+• Technical Implementation: Utilized JavaFX for the user interface, ensuring a seamless and
+userfriendly experience. Managed transaction data with a MySQL database to handle user accounts
+securely.
+• Impact: Provided a robust simulation environment for understanding core banking operations,
+improving user familiarity with ATM functionalities and database management.
+BlackJack Simulator (Java)
+• Overview: Developed a BlackJack card game simulator that mimics real-world gameplay, offering an
+interactive and engaging user experience.
+• Impact: Enhanced understanding of game development and object-oriented programming principles
+through practical application.
+Security System (ARM Assembly, LPC 1768)
+• Overview: Engineered a security system using ARM Assembly language on the LPC 1768
+microcontroller, focusing on securing physical spaces with sensor-based alerts.
+• Technical Implementation: Programmed the microcontroller to interface with sensors, enabling
+realtime monitoring and alarm triggers for unauthorized access.
+• Impact: Demonstrated proficiency in low-level programming and embedded systems, highlighting the
+ability to work with hardware and software integration.
+KEY STRENGTHS
+Problem Solving: Skilled at analyzing and breaking down problems to find creative solutions, as seen in the
+ATM Simulator and Security System projects.
+Team Collaboration: Effective communicator and team player, contributing actively to group goals.
+Critical Thinking: Strong decision-making skills, applied in developing complex systems like the Security
+System.
+Creativity: Designed intuitive interfaces balancing function and aesthetics, especially in the Campus Connect
+app.
+Learning Agility: Quick to learn and adapt to new technologies in a fast-changing CS landscape.
