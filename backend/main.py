@@ -22,6 +22,25 @@ def get_openrouter_api_key() -> str:
     load_dotenv(dotenv_path=DOTENV_PATH, override=True)
     load_dotenv(override=True)
     return os.getenv("OPENROUTER_API_KEY", "").strip().strip('"').strip("'")
+
+
+def get_site_url() -> str:
+    load_dotenv(dotenv_path=DOTENV_PATH, override=True)
+    return os.getenv("SITE_URL", "http://localhost:5173").strip()
+
+
+def get_cors_origins() -> list[str]:
+    load_dotenv(dotenv_path=DOTENV_PATH, override=True)
+    raw = os.getenv("CORS_ORIGINS", "").strip()
+    if raw:
+        return [origin.strip() for origin in raw.split(",") if origin.strip()]
+    return [
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://portfolio-production-1c40.up.railway.app",
+    ]
+
+
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "stepfun/step-3.5-flash:free"  # Free model on OpenRouter
 
@@ -31,7 +50,8 @@ app = FastAPI(title="Sriram Portfolio API")
 # CORS: Allow the React frontend (running on port 5173) to talk to this server
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=get_cors_origins(),
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -95,7 +115,7 @@ RESUME DATA:
     headers = {
         "Authorization": f"Bearer {openrouter_api_key}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost:5173",  # Required by OpenRouter
+        "HTTP-Referer": get_site_url(),  # Required by OpenRouter
         "X-Title": "Sriram Portfolio"
     }
 

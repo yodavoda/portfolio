@@ -3,8 +3,9 @@
 # This file creates the database and a "messages" table when the server starts.
 
 import sqlite3
+import os
 
-DB_NAME = "chat_history.db"
+DB_NAME = os.getenv("DB_PATH", "chat_history.db")
 
 def init_db():
     """Create the messages table if it doesn't already exist."""

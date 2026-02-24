@@ -12,15 +12,9 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 
-// Backend URL:
-// - Local dev defaults to localhost:8000
-// - Deployed frontend defaults to Railway backend
-// - Can always be overridden with VITE_API_URL
+// Backend URL for deployed frontend (override in Vercel env vars).
 const API_URL =
-  import.meta.env.VITE_API_URL ||
-  (window.location.hostname === 'localhost'
-    ? 'http://localhost:8000'
-    : 'https://portfolio-production-1c40.up.railway.app')
+  import.meta.env.VITE_API_URL || 'https://portfolio-production-1c40.up.railway.app'
 
 // TypeScript type for a single chat message
 type Message = {
